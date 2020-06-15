@@ -15,7 +15,7 @@
 nav{  background-color: #46ccb9 !important;
  margin-bottom: 35px;
 }
-ul{justify-content: flex-end;
+ul{justify-content:flex-end ;
 
 }
 li{
@@ -23,6 +23,9 @@ li{
     font-size: 20px;
    padding-top:5px ;
    
+}
+@media screen and (max-width:990px ) {
+  #pc1{width:100% ;}
 }
 
 body{ 
@@ -43,7 +46,17 @@ text-align: center;margin: auto; ;padding-left: 0px;
 #e{
   direction: rtl;width: 80%;margin: auto;margin-bottom: 90px;
 }
-@media only screen and (max-width:767px) {
+#po{
+  display: none;
+}
+
+@media only screen and (max-width:767px) { @media screen and (max-width:690px) {
+  #po{
+  display: block;
+}#pc{
+  display: none;
+}
+}
   #c{
   width: 100%;
 }
@@ -59,18 +72,50 @@ text-align: center;margin: auto; ;padding-left: 0px;
   #p{
     width: 100%;margin-bottom:20px ; border-bottom: 2px black solid;
   }
-
+nav{display: inline; }
+#po{
+  display: block;
+}#pc{
+  display: none;
 }
+   }
 </style>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-light" >
-            <a class="navbar-brand" href="#">
+      <nav>
+        <nav id="po" class="navbar navbar-light" >
+          <a class="navbar-brand" href="#">
+            <img src="img.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            news coronavirus (covid-19)
+          </a>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link disabled active" href="index.html" tabindex="-1" aria-disabled="true" autofocus>الصفحة الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.who.int/csr/disease/coronavirus_infections/ar/">ما هو كوفيد 19 ؟</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">مراجعنا</a>
+          <div class="dropdown-menu" style="text-align: center;">
+            <a class="dropdown-item" href="http://mubasher.aljazeera.net/" >الجزيرة العربية</a>
+            <a class="dropdown-item" href="https://www.who.int/ar">منظمة الصحة العالمية</a>
+            <a class="dropdown-item" href="https://www.alarabiya.net/">العربية</a>
+            
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="mailto:oussamaelnegraz@gmail.com">تواصل معنا</a>
+        </li>
+      </ul>
+    </nav>
+    <nav id="pc" class="navbar navbar-light" >
+            <a  class="navbar-brand" href="#">
               <img src="img.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
               news coronavirus (covid-19)
             </a>
-    <ul class="nav nav-tabs">
+    <ul id="pc1" class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link " href="mailto:oussamaelnegraz@gmail.com">تواصل معنا</a>
         </li>
@@ -82,7 +127,7 @@ text-align: center;margin: auto; ;padding-left: 0px;
             <a class="dropdown-item" href="https://www.alarabiya.net/">العربية</a>
             
         </li>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="https://www.who.int/csr/disease/coronavirus_infections/ar/">ما هو كوفيد 19 ؟</a>
         </li>
